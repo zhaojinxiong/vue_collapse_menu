@@ -1,0 +1,110 @@
+
+#header {
+  height: 150px;
+}
+
+.header-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: auto;
+  height: 100%;
+}
+
+.header-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.header-top {
+  position: relative;
+  z-index: 2;
+  height: 41px;
+  border-bottom: solid 1px rgba(3, 0, 0, 0.1);
+  margin-bottom: -1px;
+  font-size: 14px;
+  color: #A0A2A8;
+  transition: top 0.3s ease-out, background-color 0.3s;
+  background-color: #252b3a;
+
+}
+
+
+.header-main:before,
+.header-main:after {
+  content: " ";
+  display: table;
+}
+
+.header-main:after {
+  clear: both;
+}
+
+.header-main {
+  height: 100%;
+}
+
+.header-menu {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 0;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.header-icon-menu {
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  width: 18px;
+  height: 10px;
+  border-top: solid 2px #A0A2A8;
+  border-bottom: solid 2px #A0A2A8;
+}
+
+.header-icon-menu:before {
+  content: "";
+  display: block;
+  margin-top: 4px;
+  border-top: solid 2px #A0A2A8;
+}
+
+#header .header-icon-menu {
+  -webkit-transition: 0.3s 0.1s;
+  transition: 0.3s 0.1s;
+}
+
+.header-menu.hover .header-icon-menu {
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.header-allnav {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header-allnav.show {
+  display: block;
+}
+
+.header-allnav-wrapper {
+  float: left;
+  height: 100%;
+}
+
+
+body {
+  display: block;
+  margin: 0px;
+}

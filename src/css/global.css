@@ -1,0 +1,47 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #DDD;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #BBB;
+}
+
+*,:after,:before{
+    box-sizing:inherit;
+    -moz-box-sizing:inherit; /* Firefox */
+}
+
+body {
+    font-size: 14px;
+    color: #6F7479;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+ul,li,dd,dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,ul, li, h1, h2, h3, h4, h5, h6, dl, dd, a {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
